@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&family=Montserrat:wght@100;300;500;700&family=Playfair+Display:wght@400;500;700&display=swap');
+
+:root{
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-orange: #F27C22;
+    --color-black: #000;
+
+    
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-padding:2.4rem;
+    --sticky-bottom-padding: -18rem;
+
+    --fonts-abril: 'Abril Fatface', cursive;
+    --fonts-lato: 'Lato', sans-serif;
+    --fonts-montserrat: 'Montserrat', sans-serif;
+    --fonts-playfair: 'Playfair Display', serif;
+}
+
+.dark-theme-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.banner-first{
+    background: var(--color-background) !important;
+    width: 100%;
+    height: 110vh;
+}
+
+.banner-first .logo img{
+    height: auto;
+    position: absolute;
+    width: 335px;
+    padding: 2.4rem;
+}
+
+.banner-first img{
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin-top: -5rem;
+    top: 0;
+}
+
+.text-area{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 35%;
+    flex-direction: column;
+}
+
+.text-area .head{
+    font-weight: 600;
+    font-size: 6rem;
+    font-family: var(--fonts-lato);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.text-area .head span{
+    color: var(--color-orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.text-area .button{
+    text-align: center;
+    padding: 1rem .6rem;
+    font-size: 1.4rem;
+    width: 180px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: var(--color-dark);
+    background: #F9EF23;
+}
+
+.second-area{
+    display: grid;
+    background: #000;
+    margin-top: -4rem;
+    padding: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second-area .left{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-area .left .head{
+    color: #F9EF23;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 5rem;
+}
+
+.second-area .left .text{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 3rem;
+}
+
+.second-area .left a{
+    color: #F9EF23;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.second-area .right{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: inherit;
+}
+
+.second-area .right img{
+    width: auto;
+    height: 320px;
+    position: relative;
+}
+
+.second-area .right .image-area{
+    display: flex;
+}
+.second-area .right .image-area img:first-child{
+    margin-top: 2rem !important;
+}
+.second-area .right .image-area img:last-child{
+    margin-top: -5rem !important;
+}
+
+
+.third-area{
+    background: #FF383E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third-area .head .text{
+    font-weight: 900;
+    margin-top: 5rem;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.third-area .middle .text{
+    font-size: 1.4rem;
+    font-family: var(--fonts-lato);
+    color: #fff;
+    padding: 4rem;
+    max-width: 900px;
+    text-align: center;
+}
+
+.third-area .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.third-area .bottom span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 1rem;
+    background: #000;
+    padding: 1.3rem 1rem;
+    margin-right: 2.3rem;
+}
+
+.clear{
+    width: 100%;
+    height: 5rem;
+}
+
+.four-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.four-area .top .head{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.four-area .top .text{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+}
+
+.four-area .middle{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+}
+
+.four-area .middle .cards{
+    padding: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.four-area .middle .cards img{
+    height: 300px;
+    width: 100%;
+    opacity: .7;
+}
+
+.four-area .middle .cards .text{
+    position: absolute;
+    max-width: 250px;
+}
+
+
+
+.five-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.five-area .top .head{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.five-area .middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.five-area .middle .cards{
+    padding: 2.4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.five-area .middle .cards img{
+    width: 100%;
+    opacity: 1;
+}
+
+.five-area .cards .bottom{
+    font-size: 1.1rem;
+    background-color: #F9EF23;
+    padding: 2.3rem;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.six-area .top{
+    display: flex;
+    align-items: center;
+}
+
+
+.six-area .top .text{
+    position: absolute;
+    z-index: 99;
+    font-size: 3rem;
+    color: #F9EF23;
+    max-width: 350px;
+    font-weight: 900;
+    margin-left: 6rem;
+
+}
+
+.six-area img{
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+    object-fit: cover;
+}
+
+.six-area .middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #F9EF23;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.six-area .middle .adress{
+    padding: 1rem;
+    margin: 3rem;
+    border-left: 1px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .second-area .left{
+        padding: 0rem;
+    } 
+
+    .second-area .right .image-area {
+        flex-direction: column;
+    }
+
+    .second-area .right img {
+        height: 260px;
+        padding: 1rem;
+    }
+
+    .second-area .left .head {
+        padding: 3rem;
+    }
+
+    .second-area .right .image-area img:first-child{
+        margin-top: 2rem !important;
+    }
+    .second-area .right .image-area img:last-child{
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-first .logo img{
+        position: absolute;
+        width: 235px;
+        padding: 2.4rem;
+    }
+
+    
+    .text-area{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: 15%;
+        flex-direction: column;
+    }
+
+    .text-area .head{
+        font-weight: 600;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    .text-area .button{
+        text-align: center;
+        padding: .7rem .4rem;
+        font-size: 1rem;
+        width: 150px;
+        margin: 0 auto;
+        font-weight: 700;
+        color: var(--color-dark);
+        background: #F9EF23;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .second-area {
+        display: grid;
+        background: #000;
+        margin-top: -4rem;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .banner-first{
+        height: 55vh;
+    }
+}
+
+
+
+@media screen and (max-width: 442px) {
+    .second-area .right{
+        display: none;
+    }
+
+    
+
+    .text-area .head{
+        font-size: 2rem;
+    }
+
+    .third-area .head .text{
+        font-size: 3rem;
+    }
+    .second-area .left .head{
+        font-size: 2rem;
+    }
+    .third-area .middle .text{
+        font-size: 1.1rem;
+    }
+}
